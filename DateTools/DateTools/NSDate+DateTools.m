@@ -213,7 +213,7 @@ static NSCalendar *implicitCalendar = nil;
             }
         case MonthsAgo:
             if (isShort) {
-                return [self logicLocalizedStringFromFormat:@"%%d%@mon" withValue:value];
+                return [self logicLocalizedStringFromFormat:@"%%d%@mo" withValue:value];
             } else if (value >= 2) {
                 return [self logicLocalizedStringFromFormat:@"%%d %@months ago" withValue:value];
             } else if (isNumericDate) {
@@ -261,7 +261,7 @@ static NSCalendar *implicitCalendar = nil;
             }
         case MinutesAgo:
             if (isShort) {
-                return [self logicLocalizedStringFromFormat:@"%%d%@min" withValue:value];
+                return [self logicLocalizedStringFromFormat:@"%%d%@m" withValue:value];
             } else if (value >= 2) {
                 return [self logicLocalizedStringFromFormat:@"%%d %@minutes ago" withValue:value];
             } else if (isNumericTime) {
